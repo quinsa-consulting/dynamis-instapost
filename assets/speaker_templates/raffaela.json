@@ -1,0 +1,14 @@
+{
+  "name": "Raffaela",
+  "name_short": "Raffaela",
+  "sprache": "de_it",
+  "stil_erweiterung": "inspirierend, lebensfreudig, mediterran, warmherzig",
+  "standard_hashtags": ["#Inspiration", "#Motivation", "#Lebensfreude"],
+  "hashtags_ohne": ["Raffaela", "DynamisZentrum", "InspirationsAbend"],
+  "bild_hintergrund_stil": "warm italian golden hour, mediterranean light, blooming flowers, soft rose and golden tones, joyful atmosphere, no text, no people",
+  "layout_farbe_akzent": [210, 120, 45],
+  "layout_farbe_text": [255, 248, 235],
+  "gradient_c1": [35, 15, 10],
+  "gradient_c2": [100, 50, 20],
+  "gradient_alpha": 165
+}

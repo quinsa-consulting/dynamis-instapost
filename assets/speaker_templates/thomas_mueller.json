@@ -1,0 +1,14 @@
+{
+  "name": "Thomas Müller",
+  "name_short": "Thomas Müller",
+  "sprache": "de",
+  "stil_erweiterung": "tiefgehend, transformativ, Wesenspsychologie, inneres Wachstum",
+  "standard_hashtags": ["#ThomasMüller", "#Wesenspsychologie", "#Transformation", "#Heilung"],
+  "hashtags_ohne": ["SpirituelleEntwicklung", "Bewusstsein", "InneresWachstum"],
+  "bild_hintergrund_stil": "warm earth tones, deep mystical forest, amber and golden light, ancient wisdom atmosphere, no text, no people",
+  "layout_farbe_akzent": [196, 134, 30],
+  "layout_farbe_text": [255, 245, 220],
+  "gradient_c1": [28, 18, 45],
+  "gradient_c2": [80, 45, 15],
+  "gradient_alpha": 170
+}

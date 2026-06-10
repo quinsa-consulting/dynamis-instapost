@@ -1,0 +1,23 @@
+# API Keys und Secrets
+.env
+
+# Generierte Bilder (nicht ins Repo)
+output/
+
+# Instagram Session (Login-Daten)
+instagram_session/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# macOS
+.DS_Store
+._*
+
+# Temporäre Dateien
+*.tmp
+*.log

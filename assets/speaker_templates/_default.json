@@ -1,0 +1,14 @@
+{
+  "name": "Gast-Redner",
+  "name_short": "",
+  "sprache": "de",
+  "stil_erweiterung": "inspirierend, bereichernd",
+  "standard_hashtags": ["#Vortrag", "#Spiritualität", "#Bewusstsein"],
+  "hashtags_ohne": ["DynamisZentrum", "Basel", "VortragsAbend"],
+  "bild_hintergrund_stil": "warm mystical light, spiritual atmosphere, soft golden glow, no text, no people",
+  "layout_farbe_akzent": [196, 134, 30],
+  "layout_farbe_text": [255, 245, 220],
+  "gradient_c1": [20, 12, 35],
+  "gradient_c2": [70, 40, 15],
+  "gradient_alpha": 168
+}
