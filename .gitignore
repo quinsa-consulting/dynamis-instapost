@@ -21,3 +21,7 @@ venv/
 # Temporäre Dateien
 *.tmp
 *.log
+
+# Interne Quinsa-Dokumente
+CLIENT_MEMORY.md
+handbook/
