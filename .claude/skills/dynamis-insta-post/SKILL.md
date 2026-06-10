@@ -204,9 +204,8 @@ Zeige das generierte Bild. Frage: "Passt das Bild? (ja / neu generieren)"
 
 ---
 
-## Schritt 5: Musik-Empfehlung + Übergabe
+## Schritt 5: Musik-Empfehlung
 
-### Musik-Empfehlung
 Gib Michelle einen Suchbegriff für Instagram-Musik:
 
 ---
@@ -222,21 +221,27 @@ Kategorie-Empfehlungen:
 
 ---
 
-### Übergabe an Sacha
-Zeige alles komplett:
+## Schritt 6: Post auf Instagram veröffentlichen
 
----
-✅ **Dein Post ist fertig! Schick das alles an Sacha:**
+Speichere zuerst die Caption in eine temporäre Datei und starte dann das Posting-Skript:
 
-**CAPTION (zum Kopieren):**
-```
+```bash
+# Caption speichern
+cat > /tmp/dynamis_caption.txt << 'CAPTION_EOF'
 [VOLLSTÄNDIGE CAPTION MIT HASHTAGS]
+CAPTION_EOF
+
+# Instagram öffnen
+cd /Users/[USERNAME]/Documents/dynamis-instapost && python3 scripts/post_to_instagram.py \
+  --image "output/[DATUM]_post.png" \
+  --caption-file "/tmp/dynamis_caption.txt"
 ```
 
-**BILD:** [Dateipfad oder "das Bild, das du hochgeladen hast"]
+Wenn Michelle ein eigenes Bild hochgeladen hat (Option A aus Schritt 3), statt `output/[DATUM]_post.png` den Pfad zum hochgeladenen Bild verwenden.
 
-**MUSIK:** Suche nach "[SUCHBEGRIFF]" in Instagram
+Der Browser öffnet sich mit Instagram. Das Bild und der Text sind bereits vorbereitet.
 
-*Sacha übernimmt das Hochladen auf Instagram.*
+**Hinweis:** Keine Screenshots während oder nach dem Posting-Prozess machen.
 
 ---
+✅ **Michelle überprüft den Post im Browser und klickt selbst auf "Teilen".**

@@ -1,12 +1,12 @@
 # Instagram-Assistent – Handbuch
 ## Dynamis-Zentrum Basel
 
-**Version 1.0 | Erstellt von Quinsa Consulting**
+**Version 1.1 | Erstellt von Quinsa Consulting**
 
 ---
 
 > Dieses Handbuch erklärt Schritt für Schritt, wie du deinen Instagram-Assistenten bedienst.
-> Bei Fragen wende dich an Sacha: [Handynummer eintragen]
+> Bei technischen Problemen wende dich an Sacha.
 
 ---
 
@@ -23,23 +23,35 @@
 
 ## Kapitel 0: Was du VOR dem Treffen mit Sacha erledigen kannst {#kapitel-0}
 
-> Du kannst diese Schritte ganz alleine machen, auch ohne Sacha dabei.
-> Nimm dir 20–30 Minuten Zeit und folge den Anweisungen genau.
+> Du kannst diese Schritte ganz alleine machen.
+> Nimm dir ca. 30 Minuten Zeit und folge den Anweisungen genau.
+
+---
 
 ### 0.1 Claude Code herunterladen und installieren
 
 Claude Code ist das Programm, mit dem du deinen Assistenten bedienst.
 
 **Schritte:**
-1. Öffne deinen Browser (Safari oder Chrome)
+1. Öffne Safari oder Chrome
 2. Gehe zu: **https://claude.ai/download**
-3. Klicke auf "Download für Mac"
-4. Die Datei `Claude.dmg` wird heruntergeladen (du siehst sie unten im Browser)
-5. Doppelklicke auf die heruntergeladene Datei
-6. Ziehe das Claude-Symbol in den Programme-Ordner (Anwendungen)
-7. Öffne Claude aus dem Programme-Ordner
+3. Klicke auf den Download-Knopf für Mac
 
-> ✅ **Fertig!** Du siehst jetzt das Claude-Fenster.
+> 📸 *Hier Screenshot einfügen: Claude-Download-Seite mit Knopf für Mac*
+
+4. Die Datei `Claude.dmg` erscheint unten im Browser (oder in deinen Downloads)
+5. Doppelklicke auf `Claude.dmg`
+
+> 📸 *Hier Screenshot einfügen: Das Installations-Fenster mit Claude-Symbol und Pfeil in den Anwendungen-Ordner*
+
+6. Ziehe das Claude-Symbol in den **Anwendungen**-Ordner
+7. Öffne **Anwendungen** im Finder und doppelklicke auf **Claude**
+8. Falls eine Warnung erscheint ("von unbekanntem Entwickler"):
+   - Klicke **nicht** auf Abbrechen
+   - Gehe zu **Systemeinstellungen → Datenschutz & Sicherheit**
+   - Klicke unten auf **"Trotzdem öffnen"**
+
+> ✅ **Fertig!** Claude Code zeigt ein Chat-Fenster.
 
 ---
 
@@ -49,325 +61,319 @@ Python ist eine Programmiersprache, die das Bildgenerator-Programm braucht.
 
 **Schritte:**
 1. Gehe zu: **https://www.python.org/downloads/**
-2. Klicke auf den grossen gelben Knopf "Download Python 3.x.x"
-3. Die Datei `python-3.x.x-macos.pkg` wird heruntergeladen
+2. Klicke auf den grossen gelben Knopf **"Download Python 3.x.x"**
+
+> 📸 *Hier Screenshot einfügen: Python-Webseite mit dem gelben Download-Knopf*
+
+3. Die Datei `python-3.x.x-macos.pkg` erscheint in deinen Downloads
 4. Doppelklicke auf die Datei
-5. Klicke immer auf "Weiter" und dann auf "Installieren"
+5. Klicke immer auf **"Fortfahren"** und dann **"Installieren"**
 6. Gib dein Mac-Passwort ein wenn gefragt
+7. Klicke am Ende auf **"Schliessen"**
 
 > ✅ **Fertig!** Python ist installiert.
 
 ---
 
-### 0.3 Den Projektordner herunterladen
+### 0.3 Den Assistenten-Ordner herunterladen
 
 **Schritte:**
-1. Öffne deinen Browser und gehe zum Link, den dir Sacha geschickt hat
-   (GitHub-Repository-Link)
-2. Klicke auf den grünen Knopf "Code"
-3. Klicke auf "Download ZIP"
-4. Die ZIP-Datei wird heruntergeladen
-5. Doppelklicke auf die ZIP-Datei – sie entpackt sich automatisch
-6. Verschiebe den entpackten Ordner in deinen **Dokumente**-Ordner
+1. Öffne deinen Browser und gehe zum Link, den dir Sacha geschickt hat (GitHub-Link)
+2. Klicke auf den grünen Knopf **"Code"**
+3. Klicke auf **"Download ZIP"**
 
-> ✅ **Fertig!** Der Ordner heisst `dynamis-instapost` und liegt jetzt in Dokumenten.
+> 📸 *Hier Screenshot einfügen: GitHub-Seite mit grünem "Code"-Knopf und Download ZIP Option*
+
+4. Die ZIP-Datei erscheint in deinen Downloads
+5. Doppelklicke auf die ZIP-Datei – sie entpackt sich automatisch
+6. Du siehst jetzt einen Ordner namens `dynamis-instapost-main`
+7. Benenne ihn in **`dynamis-instapost`** um:
+   - Rechtsklick auf den Ordner → **"Umbenennen"**
+   - Tippe `dynamis-instapost` → Enter
+8. Ziehe den Ordner in deinen **Dokumente**-Ordner
+
+> ✅ **Fertig!** Der Ordner liegt jetzt unter: **Dokumente → dynamis-instapost**
 
 ---
 
-### 0.4 Voicely registrieren (für Spracherkennung)
+### 0.4 Voicely registrieren (Spracherkennung – empfohlen)
 
-Voicely ist ein Schweizer Programm, mit dem du sprechen statt tippen kannst.
-Das ist sehr praktisch, um dem Assistenten die Post-Informationen zu geben.
+Mit Voicely kannst du sprechen statt tippen. Das spart viel Zeit!
 
 **Schritte:**
 1. Gehe zu: **https://www.voicely.de/affiliate?via=sacha-bourquin-b98344**
-2. Klicke auf "Kostenlos testen" oder "Registrieren"
-3. Erstelle ein Konto mit deiner E-Mail-Adresse
-4. Lade Voicely für Mac herunter und installiere es
+2. Klicke auf **"Registrieren"** oder **"Kostenlos starten"**
 
-> ✅ **Fertig!** Voicely ist eingerichtet.
+> 📸 *Hier Screenshot einfügen: Voicely-Webseite mit Registrierungsknopf*
+
+3. Erstelle ein Konto mit deiner E-Mail-Adresse
+4. Lade Voicely für Mac herunter und installiere es (gleich wie Claude Code oben)
+5. Öffne Voicely – ein kleines Symbol erscheint oben in der Menüleiste
+
+> ✅ **Fertig!** Voicely ist bereit. Weitere Einrichtung in Kapitel 4.
 
 ---
 
 ## Kapitel 1: Deinen Mac verstehen {#kapitel-1}
 
-### 1.1 Versteckte Ordner anzeigen
+### 1.1 Versteckte Dateien und Ordner anzeigen
 
-Manche wichtigen Ordner auf deinem Mac sind normalerweise unsichtbar.
+Manche wichtigen Dateien auf deinem Mac sind normalerweise unsichtbar.
 So machst du sie sichtbar:
 
-1. Öffne den **Finder** (das blaue Gesicht-Symbol im Dock)
-2. Halte die Tasten **Cmd + Shift + .** gleichzeitig gedrückt
-   (Cmd = die Taste mit dem ⌘ Symbol)
-3. Du siehst jetzt grau dargestellte Ordner – das sind die versteckten
+1. Öffne den **Finder** (das blaue Gesicht-Symbol unten im Dock)
+2. Halte diese Tasten gleichzeitig gedrückt: **Cmd ⌘ + Shift ⇧ + Punkt (.)**
 
-> Um sie wieder zu verstecken: dieselbe Tastenkombination nochmals drücken.
+> 📸 *Hier Screenshot einfügen: Finder mit sichtbaren versteckten Dateien (grau dargestellt)*
+
+Um sie wieder zu verstecken: dieselbe Tastenkombination nochmals drücken.
 
 ---
 
 ### 1.2 Das Terminal öffnen
 
-Das Terminal ist ein Fenster, in das du Befehle eintippen kannst.
+Das Terminal ist ein Fenster, in das du kurze Befehle eintippen kannst.
 
-**Methode 1 (einfachste):**
-1. Drücke **Cmd + Leertaste** gleichzeitig (Spotlight öffnet sich)
+**Methode (einfachste):**
+1. Drücke gleichzeitig: **Cmd ⌘ + Leertaste**
+   → Ein Suchfeld erscheint (Spotlight)
 2. Tippe: `Terminal`
 3. Drücke **Enter**
 
-**Methode 2:**
-1. Öffne Programme (Anwendungen)
-2. Öffne den Ordner "Dienstprogramme"
-3. Doppelklicke auf "Terminal"
+> 📸 *Hier Screenshot einfügen: Spotlight mit "Terminal" eingegeben*
 
-> Das Terminal sieht aus wie ein schwarzes (oder weisses) Fenster mit Text.
-
----
-
-### 1.3 Ordnerpfade verstehen
-
-- `~` bedeutet: dein persönlicher Ordner (z.B. `/Users/michelle`)
-- `~/Documents` bedeutet: dein Dokumente-Ordner
-- `~/Downloads` bedeutet: dein Downloads-Ordner
-- Schrägstrich `/` trennt Ordner-Ebenen
+> Das Terminal-Fenster sieht aus wie ein schwarzes Textfenster mit einer Zeile wie:
+> `michelles-mac:~ michelle$`
+> Das ist normal. Hier kannst du Befehle eintippen.
 
 ---
 
-### 1.4 Rechtsklick auf dem Mac
+### 1.3 Den Assistenten starten – Kurzbefehl "dynamis"
 
-- Mit Maus: halte **Ctrl** und klicke
-- Mit Trackpad: klicke mit zwei Fingern gleichzeitig
+Sacha richtet beim Besuch einen Kurzbefehl ein. Danach reicht ein einziges Wort:
+
+1. Öffne das Terminal (Cmd ⌘ + Leertaste → "Terminal" → Enter)
+2. Tippe: `dynamis`
+3. Drücke **Enter**
+
+> ✅ Der Assistenten-Ordner wechselt automatisch und Claude Code startet. Fertig!
+
+Du musst dir keine langen Befehle merken. **Nur: `dynamis` eintippen.**
+
+---
+
+### 1.4 Tastenkürzel-Übersicht
+
+| Aktion | Tasten |
+|--------|--------|
+| Spotlight (Suche) öffnen | Cmd ⌘ + Leertaste |
+| Versteckte Dateien zeigen/verstecken | Cmd ⌘ + Shift ⇧ + . |
+| Kopieren | Cmd ⌘ + C |
+| Einfügen | Cmd ⌘ + V |
+| Voicely aktivieren/deaktivieren | Ctrl + Cmd ⌘ |
+| Befehl im Terminal abbrechen | Ctrl + C |
 
 ---
 
 ## Kapitel 2: Installation (mit Sacha zusammen) {#kapitel-2}
 
-> Diese Schritte machst du **zusammen mit Sacha** beim ersten Treffen.
+> Diese Schritte erledigt **Sacha beim ersten Besuch**.
+> Du musst nur dabei sein – und einmal dein Instagram-Passwort eingeben.
 
-### 2.1 Claude Code mit API-Key einrichten
+### Was Sacha beim Besuch einrichtet:
 
-1. Öffne Claude Code
-2. Du wirst nach einem API-Key gefragt
-3. Sacha gibt dir deinen persönlichen API-Key
-4. Tippe ihn ein und drücke Enter
-
----
-
-### 2.2 Den Projektordner in Claude Code öffnen
-
-1. Öffne das Terminal (siehe Kapitel 1.2)
-2. Tippe folgenden Befehl und drücke Enter:
-   ```
-   cd ~/Documents/dynamis-instapost
-   ```
-3. Tippe dann:
-   ```
-   claude
-   ```
-4. Claude Code öffnet sich für diesen Ordner
+- [ ] Claude Code mit API-Key verbinden (Sacha trägt ihn direkt ein)
+- [ ] Python-Pakete installieren
+- [ ] Zugangsdaten-Datei anlegen (`.env`)
+- [ ] Instagram einmalig einloggen (du tippst dein Passwort selbst)
+- [ ] Den `dynamis`-Kurzbefehl einrichten
+- [ ] Voicely-Tastenkürzel (Ctrl + Cmd ⌘) einrichten
+- [ ] Test-Post gemeinsam erstellen
 
 ---
 
-### 2.3 Python-Pakete installieren
+### 2.1 Instagram einmalig einloggen
 
-1. Im Terminal (im Ordner `dynamis-instapost`), tippe:
-   ```
-   pip3 install -r requirements.txt
-   ```
-2. Drücke Enter und warte (ca. 1–2 Minuten)
-3. Du siehst viel Text – das ist normal
+Beim ersten Mal öffnet Sacha das Programm und ein Browser-Fenster erscheint:
 
-> Falls die Meldung erscheint "pip3 not found": Sacha hilft dir beim Beheben.
+> 📸 *Hier Screenshot einfügen: Instagram-Login-Seite im Browser*
 
----
+**Was du tust:**
+1. Du tippst deinen Instagram-Benutzernamen ein
+2. Du tippst dein Passwort ein
+3. Du klickst auf **"Anmelden"**
+4. Danach drückst du im Terminal **Enter**
 
-### 2.4 Die .env-Datei einrichten (API-Keys)
+Nach diesem ersten Login merkt sich das Programm deinen Account automatisch.
+Du musst dich **nicht mehr bei jedem Post einloggen**.
 
-Die `.env`-Datei enthält deine geheimen Zugangscodes. Sie ist unsichtbar, aber wichtig.
-
-1. Zeige versteckte Dateien: **Cmd + Shift + .** im Finder
-2. Im `dynamis-instapost`-Ordner siehst du jetzt `.env.example`
-3. Mache eine Kopie davon und nenne sie `.env` (ohne "example")
-4. Öffne `.env` mit dem Texteditor
-5. Sacha trägt die API-Keys ein
-
-> ⚠️ **Wichtig:** Gib diese Datei niemals weiter und lade sie nicht hoch!
-
----
-
-### 2.5 Environment-Einstellungen (falls Python nicht gefunden wird)
-
-Falls das Terminal sagt "python3 not found" oder "command not found":
-
-1. Öffne das Terminal
-2. Tippe folgenden Befehl:
-   ```
-   echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.zshrc
-   ```
-3. Drücke Enter
-4. Tippe:
-   ```
-   source ~/.zshrc
-   ```
-5. Drücke Enter
-6. Versuche nochmals
-
-> Sacha hilft dir dabei beim ersten Treffen.
-
----
-
-### 2.6 Playwright installieren (für Instagram-Posting)
-
-1. Im Terminal, tippe:
-   ```
-   python3 -m playwright install chromium
-   ```
-2. Drücke Enter und warte (ca. 2–3 Minuten)
+> ⚠️ Nur du gibst dein Passwort ein. Es wird nirgends gespeichert oder weitergegeben.
 
 ---
 
 ## Kapitel 3: Einen Post erstellen – Schritt für Schritt {#kapitel-3}
 
-### 3.1 Claude Code starten
+### 3.1 Den Assistenten starten
 
-**Jeden Tag so starten:**
+1. Öffne das Terminal (Cmd ⌘ + Leertaste → "Terminal" → Enter)
+2. Tippe: `dynamis` → Enter
 
-1. Öffne das Terminal (Cmd + Leertaste → "Terminal" → Enter)
-2. Tippe:
-   ```
-   cd ~/Documents/dynamis-instapost
-   ```
-3. Drücke Enter
-4. Tippe:
-   ```
-   claude
-   ```
-5. Drücke Enter
-6. Claude Code ist jetzt bereit
+> 📸 *Hier Screenshot einfügen: Terminal mit "dynamis" eingegeben, Claude Code startet*
+
+3. Warte bis Claude Code startet (ca. 5 Sekunden)
+4. Tippe: `/dynamis-insta-post` → Enter
+
+> 📸 *Hier Screenshot einfügen: Claude Code zeigt die Kategorien-Auswahl*
 
 ---
 
-### 3.2 Den Post-Assistenten starten
+### 3.2 Kategorie wählen
 
-1. Im Claude Code Fenster, tippe:
-   ```
-   /dynamis-insta-post
-   ```
-2. Drücke Enter
-3. Der Assistent begrüsst dich und fragt nach der Post-Kategorie
+Du siehst 5 Optionen:
 
----
+```
+1 – SEMINAR oder WORKSHOP
+2 – VORTRAG (mit Gastredner)
+3 – INSPIRATIONSABEND
+4 – RÜCKBLICK (Fotos nach dem Event)
+5 – SPIRITUELL (Zitat, Gedanke)
+```
 
-### 3.3 Beispiel: Einen Vortrag ankündigen
-
-**Du gibst ein:** `2`
-*(für VORTRAG)*
-
-**Assistent fragt:** Welcher Redner?
-**Du gibst ein:** `A`
-*(für Thomas Müller)*
-
-**Assistent fragt:** Was ist das Thema?
-**Du gibst ein** (oder sprichst per Voicely):
-*"Wesenspsychologie und inneres Wachstum – wie wir unsere verborgenen Anteile integrieren"*
-
-**Assistent fragt:** Datum und Uhrzeit?
-**Du gibst ein:** *"Freitag, 15. August 2026 um 19:00 Uhr"*
-
-**Assistent fragt:** Hast du ein Bild?
-**Du gibst ein:** `A` *(wenn du einen Flyer hast)* oder `B` *(für KI-Bild)*
-
-→ Der Assistent erstellt die Caption und zeigt sie dir.
-
-**Du prüfst den Text** und sagst entweder:
-- "Passt so" – und bekommst alles zum Kopieren
-- "Ändere [was auch immer]" – der Assistent passt es an
+Tippe die gewünschte **Zahl** ein und drücke **Enter**.
 
 ---
 
-### 3.4 Den fertigen Post an Sacha schicken
+### 3.3 Informationen eingeben
 
-1. Kopiere die Caption (markieren → Cmd + C)
-2. Schicke sie per WhatsApp oder E-Mail an Sacha
-3. Schicke auch das Bild (liegt im Ordner `output/`)
-4. Schreib dazu welche Musik du möchtest (Tipp aus dem Assistenten)
+Der Assistent fragt dich der Reihe nach nach Titel, Datum, Ort, Highlights usw.
+
+**Tipp:** Nutze Voicely – einfach **Ctrl + Cmd ⌘** drücken und sprechen (siehe Kapitel 4).
+
+Beispiel was du sprechen kannst:
+> *"Thomas Müller. Thema: Wesenspsychologie. Datum: Freitag 15. August 2026 um 19 Uhr. Kosten: 40 Franken."*
+
+---
+
+### 3.4 Bild-Option wählen
+
+- **A** eingeben → Du lädst ein eigenes Bild direkt ins Chat-Fenster (Drag & Drop)
+- **B** eingeben → Der Assistent erstellt ein KI-Bild (dauert ca. 30 Sekunden)
+
+> 📸 *Hier Screenshot einfügen: Chat-Fenster mit der Bild-Frage und Option A/B*
+
+---
+
+### 3.5 Caption prüfen und freigeben
+
+Der Assistent zeigt dir den fertigen Text mit Emojis und Hashtags.
+
+> 📸 *Hier Screenshot einfügen: Generierte Caption im Chat-Fenster*
+
+- Wenn alles passt: Tippe `ja` → Enter
+- Wenn etwas geändert werden soll: Schreib es einfach, z.B.:
+  `Ändere das Datum auf 20. August`
+
+---
+
+### 3.6 Post auf Instagram veröffentlichen
+
+Nach der Freigabe:
+1. Das Programm bereitet alles automatisch vor
+2. Ein Browser-Fenster öffnet sich mit deinem Instagram
+
+> 📸 *Hier Screenshot einfügen: Instagram im Browser mit vorausgefülltem Bild und Text*
+
+3. Überprüfe den Post kurz (Bild, Text, alles korrekt?)
+4. Wähle optional Musik: Suche in Instagram nach dem Suchbegriff, den dir der Assistent genannt hat
+5. Klicke auf **"Teilen"**
+
+> Das Browser-Fenster schliesst sich automatisch nach 5 Minuten.
+> ✅ Dein Post ist jetzt auf Instagram!
 
 ---
 
 ## Kapitel 4: Voicely nutzen – sprechen statt tippen {#kapitel-4}
 
-> Voicely wandelt deine Sprache in Text um. So sparst du noch mehr Zeit!
+### 4.1 Registrierung
 
-### 4.1 Voicely einrichten
+**Link:** https://www.voicely.de/affiliate?via=sacha-bourquin-b98344
 
-1. Öffne Voicely
-2. Link für Registrierung: **https://www.voicely.de/affiliate?via=sacha-bourquin-b98344**
-3. Wähle "Schweizerdeutsch" oder "Deutsch" als Sprache
-4. Stelle sicher, dass dein Mikrofon erlaubt ist
+---
 
-### 4.2 Voicely im Alltag nutzen
+### 4.2 Tastenkürzel
 
-1. Starte Voicely (kleines Symbol oben in der Menüleiste)
-2. Klicke ins Claude Code Textfeld
-3. Aktiviere Voicely mit der Tastenkombination (z.B. Fn + F5)
-4. Sprich deutlich: *"Thema: Meditation und innere Ruhe. Datum: Samstag 20. September 2026."*
-5. Voicely schreibt mit
-6. Prüfe den Text kurz, dann drücke Enter
+Das Tastenkürzel für Voicely ist: **Ctrl + Cmd ⌘**
+
+Das richtet Sacha beim Besuch ein. Du kannst es in den Voicely-Einstellungen ändern.
+
+---
+
+### 4.3 Voicely verwenden
+
+1. Klicke ins Texteingabefeld in Claude Code
+2. Drücke **Ctrl + Cmd ⌘** – Voicely ist jetzt aktiv
+
+> 📸 *Hier Screenshot einfügen: Voicely-Mikrofon-Symbol aktiv*
+
+3. Sprich deutlich:
+   *"Thomas Müller. Thema: Meditation. Datum: 15. August um 19 Uhr."*
+4. Drücke wieder **Ctrl + Cmd ⌘** zum Beenden
+5. Prüfe den Text kurz, dann **Enter** drücken
+
+**Tipps:**
+- Ruhige Umgebung hilft
+- Deutlich und nicht zu schnell sprechen
+- Zahlen ausschreiben: "fünfzehnter August" statt "15.8."
 
 ---
 
 ## Kapitel 5: Häufige Fragen und Probleme {#kapitel-5}
 
-### "Python wurde nicht gefunden"
+### "dynamis" funktioniert nicht
 
-**Lösung:**
-```
-/usr/local/bin/python3 scripts/generate_image.py ...
-```
-Oder sage Sacha Bescheid, er richtet den PATH ein.
+Das Terminal zeigt: `command not found: dynamis`
 
----
-
-### "API-Key ungültig" oder "Authentication error"
-
-**Lösung:**
-1. Öffne die Datei `.env` (versteckte Dateien einblenden: Cmd+Shift+.)
-2. Prüfe, ob der API-Key vollständig ist (beginnt mit `sk-ant-...`)
-3. Kopiere den Key aus der E-Mail von Sacha nochmals
+**Was tun:** Terminal schliessen (rotes X), neu öffnen, nochmals versuchen.
+Falls es wieder passiert: Sacha anrufen.
 
 ---
 
-### "Das Bild wird nicht erstellt" / OpenAI Fehler
+### Claude Code reagiert nicht
 
-**Mögliche Ursachen:**
-- OpenAI API-Guthaben aufgebraucht → Sacha aufladen lassen
-- Internetverbindung prüfen
+**Was tun:** Drücke **Ctrl + C** (bricht ab). Tippe dann `/dynamis-insta-post` nochmals.
 
 ---
 
-### "command not found: claude"
+### Das KI-Bild wird nicht erstellt
 
-**Lösung:**
-1. Schliesse das Terminal-Fenster
-2. Öffne ein neues Terminal
-3. Versuche nochmals
+Mögliche Ursache: OpenAI-Guthaben aufgebraucht.
 
----
+**Was tun:**
+1. Gehe zu: **https://platform.openai.com/**
+2. Logge dich in deinen Account ein
+3. Gehe zu **"Billing"** und lade Guthaben auf (z.B. 10 USD)
 
-### Claude Code friert ein oder reagiert nicht
-
-**Lösung:**
-- Drücke **Ctrl + C** (bricht den aktuellen Vorgang ab)
-- Tippe dann `/dynamis-insta-post` nochmals
+> Sacha zeigt dir beim ersten Besuch, wo du das findest.
 
 ---
 
-### Ich brauche Hilfe
+### Instagram fragt nach Passwort
 
-Kontaktiere Sacha:
-- **WhatsApp:** [Nummer eintragen]
-- **E-Mail:** sacha@quinsa.ch
+Das passiert alle paar Wochen – die Login-Session ist abgelaufen.
+
+**Was tun:**
+1. Das Passwort-Fenster öffnet sich automatisch
+2. Gib deinen Benutzernamen und dein Passwort ein
+3. Klicke auf "Anmelden"
+4. Drücke im Terminal **Enter**
+5. Alles läuft weiter wie gewohnt
 
 ---
 
-*Dieses Handbuch wurde erstellt von Quinsa Consulting*
-*quinsa.ch | sacha@quinsa.ch*
+### Mac startet neu oder Programm öffnet sich nicht
+
+**Was tun:** Mac neu starten. Dann nochmals `dynamis` eintippen.
+
+---
+
+*Dieses Handbuch wurde erstellt von Quinsa Consulting | quinsa.ch*
