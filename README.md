@@ -52,6 +52,3 @@ Erstelle eine neue JSON-Datei in `assets/speaker_templates/`:
 }
 ```
 Dateiname = Key, den Michelle im Skill eintippt (z.B. `neuer_redner.json`).
-
-### Erstellt von
-Quinsa Consulting – quinsa.ch
